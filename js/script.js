@@ -30,6 +30,12 @@ formulario.addEventListener("submit", function(event) {
         return;
     }
 
+    if (nombre.length < 3) {
+
+        resultado.textContent = "El nombre debe contener al menos 3 caracteres.";
+        return;
+    }
+
     if (correo === "") {
 
         resultado.textContent = "Por favor, ingresa tu correo electrónico.";
