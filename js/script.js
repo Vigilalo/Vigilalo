@@ -26,36 +26,42 @@ formulario.addEventListener("submit", function(event) {
 
     if (nombre === "") {
 
+        resultado.className = "error";
         resultado.textContent = "Por favor, ingresa tu nombre y apellido.";
         return;
     }
 
     if (nombre.length < 3) {
 
+        resultado.className = "error";
         resultado.textContent = "El nombre debe contener al menos 3 caracteres.";
         return;
     }
 
     if (correo === "") {
 
+        resultado.className = "error";
         resultado.textContent = "Por favor, ingresa tu correo electrónico.";
         return;
     }
 
     if (!formatoCorreo.test(correo)) {
 
+        resultado.className = "error";
         resultado.textContent = "Por favor, ingresa un correo electrónico válido.";
         return;
     }
 
     if (mensaje === "") {
 
+        resultado.className = "error";
         resultado.textContent = "Por favor, escribe un mensaje.";
         return;
     }
 
     if (mensaje.length < 10) {
 
+        resultado.className = "error";
         resultado.textContent = "El mensaje debe contener al menos 10 caracteres.";
         return;
     }
@@ -65,6 +71,7 @@ formulario.addEventListener("submit", function(event) {
     // MENSAJE DE ÉXITO
     // ========================================
 
+    resultado.className = "exito";
     resultado.textContent =
         "¡Mensaje enviado correctamente! Nos pondremos en contacto contigo.";
 
