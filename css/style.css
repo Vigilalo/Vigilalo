@@ -88,11 +88,13 @@ header {
     align-items: center;
     text-align: center;
     padding: 60px 20px;
+
     background: linear-gradient(
         135deg,
         #111827,
         #1d4ed8
     );
+
     color: white;
 }
 
@@ -112,7 +114,7 @@ header {
 
 
 /* ========================================
-   BOTONES
+   BOTÓN PRINCIPAL
 ======================================== */
 
 .boton {
@@ -129,7 +131,6 @@ header {
 .boton:hover {
     transform: translateY(-3px);
 }
-
 
 /* ========================================
    SECCIONES GENERALES
