@@ -87,6 +87,17 @@ formulario.addEventListener("submit", function(event) {
 
 const modoBtn = document.getElementById("modoBtn");
 
+if (localStorage.getItem("modoOscuro") === "activo") {
+
+    document.body.classList.add("oscuro");
+    modoBtn.textContent = "☀️";
+
+} else {
+
+    modoBtn.textContent = "🌙";
+
+}
+
 modoBtn.addEventListener("click", function() {
 
     // Activar o desactivar modo oscuro
@@ -96,10 +107,12 @@ modoBtn.addEventListener("click", function() {
     if (document.body.classList.contains("oscuro")) {
 
         modoBtn.textContent = "☀️";
+        localStorage.setItem("modoOscuro", "activo");
 
     } else {
 
         modoBtn.textContent = "🌙";
+        localStorage.setItem("modoOscuro", "inactivo");
 
     }
 
