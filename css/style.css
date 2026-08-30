@@ -22,7 +22,7 @@ body {
 
 
 /* ========================================
-   BARRA DE NAVEGACIÓN
+   NAVEGACIÓN
 ======================================== */
 
 header {
@@ -55,7 +55,7 @@ header {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .menu a:hover {
@@ -64,7 +64,7 @@ header {
 
 
 /* ========================================
-   BOTÓN MODO OSCURO
+   BOTÓN DE MODO
 ======================================== */
 
 #modoBtn {
