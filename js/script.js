@@ -26,7 +26,7 @@ formulario.addEventListener("submit", function(event) {
 
     if (nombre === "") {
 
-        resultado.textContent = "Por favor, ingresa tu nombre.";
+        resultado.textContent = "Por favor, ingresa tu nombre y ape.";
         return;
     }
 
