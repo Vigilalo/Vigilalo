@@ -204,41 +204,66 @@
 </section>
                           <!-- CONTACTO -->
 
-                       <section id="contacto">
-                        <h2>Contáctanos</h2>
-                        <form id="formulario">
+<section id="contacto">
 
-                          <label for="nombre">Nombre:</label>
+    <h2>Contáctanos</h2>
 
-                        <input
-                        type="text"
-                        id="nombre"
-                        placeholder="Ingresa tu nombre"
-                       >
-
-                       <label for="correo">Correo:</label>
-
-                       <input
-                       type="email"
-                       id="correo"
-                       placeholder="correo@ejemplo.com"
-                       >
-
-                       <label for="mensaje">Mensaje:</label>
-
-                       <textarea
-                       id="mensaje"
-                       placeholder="Escribe tu mensaje"
-                       ></textarea>
+    <p>
+        Completa el siguiente formulario y nuestro equipo
+        se pondrá en contacto contigo.
+    </p>
 
 
-                       <button type="submit">
-                        Enviar mensaje
-                        </button>
+    <form id="formulario">
 
-                        </form>
-                        <p id="resultado"></p>
-                         </section>
+        <label for="nombre">
+            Nombre completo:
+        </label>
+
+        <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresa tu nombre"
+            autocomplete="name"
+        >
+
+
+        <label for="correo">
+            Correo electrónico:
+        </label>
+
+        <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="correo@ejemplo.com"
+            autocomplete="email"
+        >
+
+
+        <label for="mensaje">
+            Mensaje:
+        </label>
+
+        <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Escribe tu mensaje"
+        ></textarea>
+
+
+        <button type="submit">
+            Enviar mensaje
+        </button>
+
+    </form>
+
+
+    <!-- Mensaje generado mediante JavaScript -->
+    <p id="resultado"></p>
+
+</section>
                          </main>
 
 
