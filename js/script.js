@@ -54,6 +54,12 @@ formulario.addEventListener("submit", function(event) {
         return;
     }
 
+    if (mensaje.length < 10) {
+
+        resultado.textContent = "El mensaje debe contener al menos 10 caracteres.";
+        return;
+    }
+
 
     // ========================================
     // MENSAJE DE ÉXITO
