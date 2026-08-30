@@ -1,0 +1,369 @@
+/* ========================================
+   CONFIGURACIÓN GENERAL
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #222;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* ========================================
+   BARRA DE NAVEGACIÓN
+======================================== */
+
+header {
+    background-color: #111827;
+    padding: 18px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #60a5fa;
+}
+
+
+/* ========================================
+   BOTÓN MODO OSCURO
+======================================== */
+
+#modoBtn {
+    border: none;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* ========================================
+   SECCIÓN PRINCIPAL
+======================================== */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1d4ed8
+    );
+    color: white;
+}
+
+.hero-contenido {
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   BOTONES
+======================================== */
+
+.boton {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: white;
+    color: #111827;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   SECCIONES GENERALES
+======================================== */
+
+section {
+    padding: 70px 7%;
+}
+
+section > h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+
+/* ========================================
+   SERVICIOS
+======================================== */
+
+.servicios-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.servicio {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.servicio:hover {
+    transform: translateY(-8px);
+}
+
+.servicio h3 {
+    margin-bottom: 15px;
+    color: #1d4ed8;
+}
+
+
+/* ========================================
+   SOBRE NOSOTROS
+======================================== */
+
+#nosotros {
+    background-color: white;
+    text-align: center;
+}
+
+#nosotros p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+
+/* ========================================
+   PROYECTOS
+======================================== */
+
+.proyectos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.proyectos-container article {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.proyectos-container article:hover {
+    transform: translateY(-5px);
+}
+
+.proyectos-container h3 {
+    margin-bottom: 10px;
+    color: #1d4ed8;
+}
+
+
+/* ========================================
+   FORMULARIO DE CONTACTO
+======================================== */
+
+#contacto {
+    background-color: #e5e7eb;
+}
+
+#formulario {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#formulario label {
+    font-weight: bold;
+}
+
+#formulario input,
+#formulario textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#formulario textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#formulario button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1d4ed8;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#formulario button:hover {
+    background-color: #1e40af;
+}
+
+#resultado {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   PIE DE PÁGINA
+======================================== */
+
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* ========================================
+   MODO OSCURO
+======================================== */
+
+body.oscuro {
+    background-color: #111827;
+    color: white;
+}
+
+body.oscuro .servicio,
+body.oscuro .proyectos-container article,
+body.oscuro #nosotros {
+    background-color: #1f2937;
+    color: white;
+}
+
+body.oscuro #contacto {
+    background-color: #374151;
+}
+
+body.oscuro .servicio h3,
+body.oscuro .proyectos-container h3 {
+    color: #60a5fa;
+}
+
+
+/* ========================================
+   DISEÑO RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .servicios-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proyectos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 2.3rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .servicios-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+}
